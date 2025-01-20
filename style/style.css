@@ -31,6 +31,9 @@
   main section{
     margin-top: 130px;
   }
+  .text-primary{
+    color: #FF900E;
+  }
   /* dark 02 */
   .text-gray{
     color: #131313;
@@ -99,9 +102,24 @@ max-width: 530px;
 /* Responsive start here */
  
  @media screen and (max-width:576px){
-  .nav-links, .navbar{
+  .nav-links, 
+  .team-featureas,
+  .navbar{
     flex-direction: column;
   }
-  
+  .team-image{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .team-container{
+    margin-left: 20px;
+  }
  }
- 
+ /* Mediam size devices responsive starts */
+ @media screen and (min-width:576px) and (max-width:992px){
+  .team-featureas{
+    flex-direction: column;
+  }
+  .team-container{
+    margin: 40px;
+  }
+ }
